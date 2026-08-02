@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرئيسية - المجموعة الاستشارية المصرية (ECG)</title>
+  <meta name="description" content="مكتب محاسب قانوني بالإسكندرية، استشارات ضريبية، مراجعة حسابات وتأسيس شركات في مصر بخبرة عريقة.">
+  
+  <!-- استدعاء خط Cairo العصري -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- ملف التنسيقات العام -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- تنسيقات مخصصة للرئيسية والفوتر وحجم الصور المكبرة وخلفية بيت الخبرة -->
+  <style>
+    /* تصميم خلفية عصرية فاخرة لجملة بيت الخبرة المعتمد */
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(30, 58, 138, 0.05);
+    }
+
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--primary);
+      letter-spacing: -0.3px;
+    }
+
+    /* تكبير الصور بدقة 200 عرض في 300 ارتفاع */
+    .feature-img-custom {
+      width: 200px;
+      height: 300px;
+      object-fit: contain;
+      margin: 0 auto 15px auto;
+      display: block;
+    }
+
+    .marquee-section {
+      overflow: hidden;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 30px 0;
+    }
+
+    .logo-marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 25px;
+      width: max-content;
+      animation: scrollMarquee 35s linear infinite;
+    }
+
+    .logo-marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    .client-logo-card {
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      padding: 12px 20px;
+      border-radius: 10px;
+      min-width: 260px;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      text-align: right;
+    }
+
+    .client-icon {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: var(--card-bg);
+      padding: 2px;
+      border: 1px solid var(--border-color);
+    }
+
+    .client-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .client-name {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .client-tag {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    @keyframes scrollMarquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(50%); }
+    }
+
+    /* تنسيقات الفوتر الاحترافي */
+    .footer {
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      padding: 50px 0 20px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 992px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+    }
+
+    .footer-link:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="home.html" class="brand-logo">
+        <img src="images/Ecg_logo.jpeg" alt="شعار المجموعة الاستشارية المصرية" style="height: 50px; width: auto; object-fit: contain; border-radius: 8px;">
+        <div class="brand-text">
+          <span class="brand-title">المجموعة الاستشارية المصرية</span>
+          <span class="brand-subtitle">للمحاسبة والمراجعة والضرائب</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-link active">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="blog.html" class="nav-link">المدونة</a></li>
+        <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="en/index.html" class="lang-switch-btn">English</a>
+        <button class="theme-toggle-btn" aria-label="تبديل المظهر" title="تغيير المظهر">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي للرئيسية -->
+  <main>
+    
+    <!-- قسم صورة الواجهة البارزة (Hero Banner) -->
+    <section style="width: 100%; margin: 0; padding: 0; line-height: 0;">
+      <img src="images/hero-bg.png" alt="المجموعة الاستشارية المصرية" style="width: 100%; height: auto; max-height: 350px; display: block; object-fit: cover;">
+    </section>
+
+    <!-- قسم النصوص والإحصائيات الرئيسية -->
+    <section style="padding: 40px 0;">
+      <div class="container" style="text-align: center;">
+        
+        <!-- خلفية عصرية فخمة لبيت الخبرة المعتمد -->
+        <div class="certified-badge-box">
+          <span style="font-size: 1.1rem;">🛡️</span>
+          <span class="certified-badge-text">بيت خبرة معتمد للاستشارات المالية</span>
+        </div>
+
+        <h1 style="font-size: 2.2rem; font-weight: 900; margin-bottom: 15px; color: var(--text-main);">نحمي أعمالك.. ونضمن استقرارك الموقِف الضريبي</h1>
+        <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 35px auto; line-height: 1.8;">
+          نقدم حلولاً متكاملة ورؤى استراتيجية لمساعدة مؤسستك على تحقيق النمو المستدام وإدارة التحديات المالية باحترافية تامة.
+        </p>
+        
+        <!-- شبكة الإحصائيات بالأرقام -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px;">
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">20+</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">سنة من الخبرة الريادية</p>
+          </div>
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">500+</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">عميل تم خدمة شركاتهم بنجاح</p>
+          </div>
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">1200+</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">مشروع استشاري ناجح</p>
+          </div>
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">100%</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">التزام بمعايير الجودة المهنية</p>
+          </div>
+        </div>
+
+        <div>
+          <a href="contact.html" class="btn btn-primary" style="padding: 14px 32px;">احجز استشارة مجانية الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم لماذا نحن (المميزات الأساسية مع الصور المكبرة 200x300) -->
+    <section style="padding: 40px 0; background-color: var(--card-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 30px;">
+         <div class="certified-badge-box">
+            <span style="font-size: 1.1rem;"></span>
+            <span class="certified-badge-text">  لماذا نحن ؟</span>
+          </div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">بيت خبرة معتمد للاستشارات المالية والضريبية</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px;">
+          
+          <div class="card" style="text-align: center;">
+            <img src="images/accounting_tax.png" alt="خبرة محاسبية" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">خبرة محاسبية وضريبية</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">فريق عمل متخصص يقدم حلولاً متكاملة لكافة التحديات الضريبية.</p>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <img src="images/strategic_solutions.png" alt="حلول استراتيجية" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">حلول استراتيجية متخصصة</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">نصمم بدقة استراتيجيات مالية تدعم نمو شركتك وتحقق أهدافك.</p>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <img src="images/data_privacy.png" alt="سرية البيانات" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">سرية وأمان لبياناتك</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">نحافظ على سرية كافة معلوماتك وقوائمك المالية بأعلى معايير الأمان.</p>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <img src="images/speed_precision.png" alt="سرعة التنفيذ" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">سرعة الإنجاز ودقة التنفيذ</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">نلتزم بالمواعيد النهائية لتقديم كافة الخدمات والإقرارات دون تأخير.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم خبرة قطاعية متعمقة (6 قطاعات مع الصور الصحيحة) -->
+    <section style="padding: 50px 0;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 35px;">
+          <div class="certified-badge-box">
+            <span style="font-size: 1.1rem;"></span>
+            <span class="certified-badge-text">خبرة قطاعية متعمقة</span>
+          </div>  
+          <h2 style="font-size: 1.6rem; font-weight: 900; color: var(--text-main);">أبرز القطاعات الحيوية في السوق المصري التي نخدمها</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          
+          <!-- 1. الشركات التجارية والصناعية -->
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="images/Commercial_and_Industrial_Sector.png" alt="الشركات التجارية والصناعية" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">الشركات التجارية والصناعية</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">حسابات التكاليف، الرقابة على المخزون، التسويات الضريبية، والامتثال لمنظومة الفاتورة والإيصال الإلكتروني.</p>
+            </div>
+          </div>
+
+          <!-- 2. القطاع العقاري والمقاولات -->
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="images/Real_Estate_and_Construction_Sector.png" alt="القطاع العقاري والمقاولات" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">القطاع العقاري والمقاولات</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">المعالجة المحاسبية للمستخلصات، دراسات الجدوى للمشروعات، والهيكلة الضريبية للشركات العقارية.</p>
+            </div>
+          </div>
+
+          <!-- 3. الشركات الناشئة وريادة الأعمال -->
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="images/Startups_and_Entrepreneurship.png" alt="الشركات الناشئة وريادة الأعمال" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">الشركات الناشئة وريادة الأعمال</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">الدعم المالي الاستراتيجي، الهيكلة القانونية السليمة منذ التأسيس، إعداد الموازنات وجذب الاستثمارات.</p>
+            </div>
+          </div>
+
+          <!-- 4. الخدمات اللوجستية والنقل -->
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="images/Logistics_and_Transportation.png" alt="الخدمات اللوجستية والنقل" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">الخدمات اللوجستية والنقل</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">بحكم تواجدنا في الإسكندرية؛ نقدم الاستشارات الضريبية والجمركية، تقييم الأداء المالي، وإدارة التدفقات.</p>
+            </div>
+          </div>
+
+          <!-- 5. القطاع الطبي والرعاية الصحية -->
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="images/Medical_and_Healthcare_Sector.png" alt="الرعاية الصحية والمستشفيات" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">القطاع الطبي والرعاية الصحية</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">الاستشارات المالية للمستشفيات والمراكز الطبية، إدارة التكاليف الطبية، والامتثال للضوابط الضريبية والمحاسبية الخاصة بالقطاع الطبي.</p>
+            </div>
+          </div>
+
+          <!-- 6. الاستيراد والتصدير والتجارة الدولية -->
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="images/Import_Export_and_International_Trade.png" alt="الاستيراد والتصدير" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">الاستيراد والتصدير والتجارة الدولية</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">معالجة الاعتمادات المستندية، الرقابة على المصروفات الجمركية، وتسويات ضريبة القيمة المضافة على الصادرات والواردات.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- شريط شركاء النجاح المتحرك (Marquee) -->
+    <section class="marquee-section">
+      <div class="container" style="text-align: center; margin-bottom: 25px;">
+        <div class="certified-badge-box">
+            <span style="font-size: 1.1rem;"></span>
+            <span class="certified-badge-text">  شركاء النجاح</span>
+          </div>
+        
+        <h2 style="font-size: 1.3rem; font-weight: 800; color: var(--text-main);">نفخر بثقة كبرى الشركات والمؤسسات</h2>
+      </div>
+
+      <div class="logo-marquee">
+        <div class="marquee-track">
+          <div class="client-logo-card">
+            <img src="images/okba.jpeg" alt="مستشفى عقبة بن نافع" class="client-icon">
+            <div class="client-info"><span class="client-name">مستشفى عقبة بن نافع</span><span class="client-tag">خدمات طبية</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="images/tadawi.jpeg" alt="مستشفى تداوى" class="client-icon">
+            <div class="client-info"><span class="client-name">مستشفى تداوى</span><span class="client-tag">خدمات طبية</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="images/codezone.jpeg" alt="كود زون" class="client-icon">
+            <div class="client-info"><span class="client-name">كود زون</span><span class="client-tag">برمجيات</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="images/sakrgroup.jpeg" alt="مجموعة صقر" class="client-icon">
+            <div class="client-info"><span class="client-name">مجموعة صقر</span><span class="client-tag">صناعي</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="images/elasdekaa.jpeg" alt="شركة الأصدقاء" class="client-icon">
+            <div class="client-info"><span class="client-name">شركة الأصدقاء</span><span class="client-tag">صناعي</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="images/ABDELMONEM GABER .jpeg" alt="مستشفى عبدالمنعم جابر" class="client-icon">
+            <div class="client-info"><span class="client-name">مستشفى عبدالمنعم جابر</span><span class="client-tag">خدمات طبية</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- تذييل الصفحة (Footer الشامل بالأسماء الصحيحة لأيقونات مجلد الصور) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- العمود الأول (أقصى اليمين): اللوجو والنبذة التعريفية -->
+        <div style="text-align: right;">
+          <div style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; margin-bottom: 12px;">
+            <div style="display: flex; flex-direction: column; text-align: right;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">المجموعة الاستشارية المصرية</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">للمحاسبة والمراجعة والضرائب</span>
+            </div>
+            <img src="images/Ecg_logo.jpeg" alt="شعار ECG" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; text-align: right;">
+            المجموعة الاستشارية المصرية (ECG) بيت خبرة متخصص يقدم استشارات مالية وضريبية ومراجعة قانونية متكاملة لرواد الأعمال والشركات.
+          </p>
+        </div>
+
+        <!-- العمود الثاني: روابط سريعة -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">روابط سريعة</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="home.html" class="footer-link">الرئيسية</a></li>
+            <li><a href="about.html" class="footer-link">من نحن</a></li>
+            <li><a href="services.html" class="footer-link">خدماتنا</a></li>
+            <li><a href="blog.html" class="footer-link">المدونة</a></li>
+            <li><a href="contact.html" class="footer-link">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الثالث: خدماتنا الرئيسية (مربوطة بصفحة services.html) -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">خدماتنا الرئيسية</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">الضرائب</a></li>
+            <li><a href="services.html#audit" class="footer-link">المراجعة والتدقيق المالي</a></li>
+            <li><a href="services.html#setup" class="footer-link">تأسيس الشركات والهيكلة</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">دراسات الجدوى الاقتصادية</a></li>
+            <li><a href="services.html#consulting" class="footer-link">استشارات مالية وإدارية</a></li>
+          </ul>
+        </div>
+<!-- العمود الرابع: تواصل معنا (الأيقونات في اليمين والنصوص في اليسار) -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">تواصل معنا</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            
+            <!-- العنوان -->
+            <li style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 10px;">
+              <span style="color: #ef4444; font-size: 1rem; margin-top: 2px; flex-shrink: 0;">📍</span>
+              <span style="line-height: 1.6; text-align: right;">مدينة فيوتشر سيتى - عمارة 2 الدور 1 - شارع الشهيد جلال الدسوقى - وابور المياه - باب شرقى - الاسكندرية - جمهورية مصر العربية</span>
+            </li>
+            
+            <!-- الهاتف الأول -->
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">034228459</a>
+            </li>
+            
+            <!-- الهاتف الثاني -->
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">01222552314</a>
+            </li>
+            
+            <!-- البريد الإلكتروني -->
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <span style="font-size: 1rem; flex-shrink: 0;">✉️</span>
+              <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a>
+            </li>
+           <!-- السوشيال ميديا (فيسبوك ولينكدإن) -->
+            <a href="https://www.facebook.com/ECG.Khaled.Gaber" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-facebook.png" alt="Facebook" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-linkedin.png" alt="LinkedIn" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- خط الحقوق المحفوظة -->
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>المجموعة الاستشارية المصرية (ECG) &copy; 2026 | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+  <!-- جافاسكريبت التحكم بالثيم -->
+  <script src="js/main.js"></script>
+</body>
+</html>

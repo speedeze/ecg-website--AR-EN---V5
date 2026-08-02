@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Egyptian Consulting Group (ECG)</title>
+  <meta name="description" content="Follow the latest accounting, tax, and legislative updates in the Egyptian market through ECG's blog.">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 12px;
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--primary);
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 992px) { blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 576px) { blog-grid { grid-template-columns: 1fr; } }
+    .blog-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="home.html" class="brand-logo">
+        <img src="../images/Ecg_logo.jpeg" alt="ECG Logo">
+        <div class="brand-text">
+          <span class="brand-title">Egyptian Consulting Group</span>
+          <span class="brand-subtitle">Accounting, Audit & Tax</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../blog.html" class="lang-switch-btn">العربية</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Change Theme">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 50px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 45px;">
+        <div class="certified-badge-box">
+          <span class="certified-badge-text">Blog & Updates</span>
+        </div>
+        <h1 style="font-size: 2rem; font-weight: 900; color: var(--text-main); margin-bottom: 12px;">Latest Accounting & Tax Guidelines</h1>
+        <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 680px; margin: 0 auto;">
+          Follow the latest legislative and tax amendments in the Egyptian market to keep your company compliant and secure.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Digital Mandate</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Corporate Guide to E-Invoicing System Compliance</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Key legal steps and requirements to avoid fines and ensure proper integration with the Egyptian Tax Authority.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Tax Updates</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">New Tax Amendments and Impact on Financial Statements</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">How your management can flexibly handle recent updates to tax laws and Egyptian accounting standards.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Financial Control</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Importance of Inventory Audit & Cost Accounting for Industrial Firms</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Effective strategies to enforce internal control and protect operational profits efficiently.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Governance</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Role of Internal Audit in Detecting Financial Risks</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">How robust internal control systems protect your organization from financial waste.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Company Setup</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Your Guide to Choosing the Right Legal Form for Startups</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Comprehensive comparison of company types under Egyptian law and tax implications.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Digital Transformation</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">How ERP Systems Empower Rapid Management Decisions</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">The importance of linking accounts, inventory, and sales via advanced platforms like Odoo.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Feasibility Studies</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Why Some Investment Projects Fail Despite Strong Ideas</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Analytical view on the importance of financial feasibility studies and working capital flows.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Crisis Management</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Cost-Cutting Plans and Financial Restructuring</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">How to re-engineer your company's financial operations and manage cash flow efficiently.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">Tax Compliance</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">Comprehensive Guide to Avoiding Fines During Tax Season</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">Key professional tips for filing returns on time and smooth settlement with tax authorities.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">Read More & Consult</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="text-align: left;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="../images/Ecg_logo.jpeg" alt="ECG Logo" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">Egyptian Consulting Group</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">Accounting, Audit & Tax</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+            Egyptian Consulting Group (ECG) is a specialized expert house offering integrated financial, tax, and legal auditing services for entrepreneurs and corporations.
+          </p>
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="home.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Core Services</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">Tax Consulting</a></li>
+            <li><a href="services.html#audit" class="footer-link">Financial Audit</a></li>
+            <li><a href="services.html#setup" class="footer-link">Company Setup</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">Feasibility Studies</a></li>
+            <li><a href="services.html#consulting" class="footer-link">Financial Advisory</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Contact Us</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li>📍 Future City - Building 2, Floor 1 - El Shaheed Galal El Desouky St., Alexandria, Egypt</li>
+            <li dir="ltr">📞 <a href="tel:034228459" style="color: var(--text-muted); text-decoration: none;">034228459</a></li>
+            <li dir="ltr">💬 <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;">01222552314</a></li>
+            <li dir="ltr">✉️ <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>Egyptian Consulting Group (ECG) &copy; 2026 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

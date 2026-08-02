@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Egyptian Consulting Group (ECG)</title>
+  <meta name="description" content="Certified accounting and tax consulting firm in Alexandria, Egypt. Expert audit, tax, and corporate setup services.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Custom CSS for Features & Marquee -->
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(30, 58, 138, 0.05);
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+    .feature-img-custom {
+      width: 200px;
+      height: 300px;
+      object-fit: contain;
+      margin: 0 auto 15px auto;
+      display: block;
+    }
+    .marquee-section {
+      overflow: hidden;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 30px 0;
+    }
+    .logo-marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+    }
+    .marquee-track {
+      display: flex;
+      gap: 25px;
+      width: max-content;
+      animation: scrollMarquee 15s linear infinite;
+    }
+    .logo-marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    .client-logo-card {
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      padding: 12px 20px;
+      border-radius: 10px;
+      min-width: 260px;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      text-align: left;
+    }
+    .client-icon {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: var(--card-bg);
+      padding: 2px;
+      border: 1px solid var(--border-color);
+    }
+    .client-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .client-name {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+    .client-tag {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    @keyframes scrollMarquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(50%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="../images/Ecg_logo.jpeg" alt="ECG Logo" style="height: 50px; width: auto; object-fit: contain; border-radius: 8px;">
+        <div class="brand-text">
+          <span class="brand-title">Egyptian Consulting Group</span>
+          <span class="brand-subtitle">Accounting, Audit & Tax</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="../home.html" class="lang-switch-btn">العربية</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Change Theme">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section style="width: 100%; margin: 0; padding: 0; line-height: 0;">
+      <img src="../images/hero-bg.png" alt="Egyptian Consulting Group" style="width: 100%; height: auto; max-height: 350px; display: block; object-fit: cover;">
+    </section>
+
+    <!-- Intro & Statistics Section -->
+    <section style="padding: 40px 0;">
+      <div class="container" style="text-align: center;">
+        
+        <div class="certified-badge-box">
+          <span style="font-size: 1.1rem;">🛡️</span>
+          <span class="certified-badge-text">Certified Financial & Tax Experts</span>
+        </div>
+
+        <h1 style="font-size: 2.2rem; font-weight: 900; margin-bottom: 15px; color: var(--text-main);">Protecting Your Business.. Ensuring Tax Compliance</h1>
+        <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 35px auto; line-height: 1.8;">
+          We provide integrated solutions and strategic insights to help your organization achieve sustainable growth and manage financial challenges with utmost professionalism.
+        </p>
+        
+        <!-- Statistics Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px;">
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">20+</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">Years of Leadership Experience</p>
+          </div>
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">500+</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">Clients Successfully Served</p>
+          </div>
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">1200+</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">Successful Consulting Projects</p>
+          </div>
+          <div class="card" style="text-align: center; padding: 20px;">
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 5px; font-weight: 900;">100%</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">Commitment to Quality Standards</p>
+          </div>
+        </div>
+
+        <div>
+          <a href="contact.html" class="btn btn-primary" style="padding: 14px 32px;">Book a Free Consultation Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section style="padding: 40px 0; background-color: var(--card-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 30px;">
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">Certified Financial & Tax Consulting Experts</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px;">
+          <div class="card" style="text-align: center;">
+            <img src="../images/accounting_tax.png" alt="Accounting Expertise" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">Accounting & Tax Expertise</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">A specialized team providing integrated solutions for all tax challenges.</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="../images/strategic_solutions.png" alt="Strategic Solutions" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">Specialized Strategic Solutions</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">We precisely design financial strategies to support your corporate growth.</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="../images/data_privacy.png" alt="Data Privacy" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">Data Privacy & Security</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">We maintain strict confidentiality of your financial info with highest security.</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="../images/speed_precision.png" alt="Speed & Precision" class="feature-img-custom">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main);">Speed & Precision</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">We adhere to deadlines for delivering all services and returns without delay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectors Experience Section -->
+    <section style="padding: 50px 0;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 35px;">
+          <div class="certified-badge-box">
+            <span class="certified-badge-text">In-depth Sector Expertise</span>
+          </div>  
+          <h2 style="font-size: 1.6rem; font-weight: 900; color: var(--text-main);">Key Vital Sectors We Serve in Egypt</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="../images/Commercial_and_Industrial_Sector.png" alt="Commercial & Industrial" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Commercial & Industrial</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Cost accounting, inventory control, tax settlements, and e-invoice compliance.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="../images/Real_Estate_and_Construction_Sector.png" alt="Real Estate" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Real Estate & Construction</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Contractor accounting, project feasibility studies, and real estate tax structuring.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="../images/Startups_and_Entrepreneurship.png" alt="Startups" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Startups & Entrepreneurship</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Strategic financial support, sound legal setup, budgeting, and investment attraction.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="../images/Logistics_and_Transportation.png" alt="Logistics" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Logistics & Transportation</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Tax and customs advisory in Alexandria, financial performance evaluation, and cash flow management.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="../images/Medical_and_Healthcare_Sector.png" alt="Healthcare" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Medical & Healthcare</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Financial consulting for hospitals and medical centers, medical cost management, and healthcare tax compliance.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; align-items: center;">
+            <img src="../images/Import_Export_and_International_Trade.png" alt="Import & Export" style="width: 70px; height: 70px; object-fit: contain; flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Import, Export & Trade</h3>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Documentary credits processing, customs expense control, and VAT settlements on exports/imports.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+      <div class="container" style="text-align: center; margin-bottom: 25px;">
+        <h2 style="font-size: 1.3rem; font-weight: 800; color: var(--text-main);">Trusted by Major Companies and Institutions</h2>
+      </div>
+
+      <div class="logo-marquee">
+        <div class="marquee-track">
+          <div class="client-logo-card">
+            <img src="../images/okba.jpeg" alt="Okba Hospital" class="client-icon">
+            <div class="client-info"><span class="client-name">Okba Hospital</span><span class="client-tag">Healthcare</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="../images/tadawi.jpeg" alt="Tadawi Hospital" class="client-icon">
+            <div class="client-info"><span class="client-name">Tadawi Hospital</span><span class="client-tag">Healthcare</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="../images/codezone.jpeg" alt="Code Zone" class="client-icon">
+            <div class="client-info"><span class="client-name">Code Zone</span><span class="client-tag">Software</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="../images/sakrgroup.jpeg" alt="Sakr Group" class="client-icon">
+            <div class="client-info"><span class="client-name">Sakr Group</span><span class="client-tag">Industrial</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="../images/elasdekaa.jpeg" alt="El Asdekaa" class="client-icon">
+            <div class="client-info"><span class="client-name">El Asdekaa</span><span class="client-tag">Industrial</span></div>
+          </div>
+          <div class="client-logo-card">
+            <img src="../images/ABDELMONEM GABER .jpeg" alt="Abdelmonem Gaber Hospital" class="client-icon">
+            <div class="client-info"><span class="client-name">Abdelmonem Gaber Hospital</span><span class="client-tag">Healthcare</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="text-align: left;">
+        
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="../images/Ecg_logo.jpeg" alt="ECG Logo" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">Egyptian Consulting Group</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">Accounting, Audit & Tax</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+            Egyptian Consulting Group (ECG) is a specialized expert house offering integrated financial, tax, and legal auditing services for entrepreneurs and corporations.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Core Services</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">Tax Consulting</a></li>
+            <li><a href="services.html#audit" class="footer-link">Financial Audit</a></li>
+            <li><a href="services.html#setup" class="footer-link">Company Setup</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">Feasibility Studies</a></li>
+            <li><a href="services.html#consulting" class="footer-link">Financial Advisory</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Contact Us</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <span style="color: #ef4444; font-size: 1rem; margin-top: 2px; flex-shrink: 0;">📍</span>
+              <span style="line-height: 1.6;">Future City - Building 2, Floor 1 - El Shaheed Galal El Desouky St., Wabour El المياه, Bab Sharq, Alexandria, Egypt</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <img src="../images/icon-whatsapp.png" alt="Phone" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">034228459</a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <img src="../images/icon-whatsapp.png" alt="WhatsApp" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">01222552314</a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1rem; flex-shrink: 0;">✉️</span>
+              <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 15px; margin-top: 5px;">
+              <a href="https://www.facebook.com/ECG.Khaled.Gaber" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="../images/icon-facebook.png" alt="Facebook" style="width: 18px; height: 18px; object-fit: contain;"> Facebook
+              </a>
+              <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="../images/icon-linkedin.png" alt="LinkedIn" style="width: 18px; height: 18px; object-fit: contain;"> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>Egyptian Consulting Group (ECG) &copy; 2026 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Theme Toggle -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

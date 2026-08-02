@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدماتنا - المجموعة الاستشارية المصرية (ECG)</title>
+  <meta name="description" content="تعرف على خدماتنا الاستشارية المتكاملة في المحاسبة، المراجعة، الضرائب، وتأسيس الشركات بالإسكندرية ومصر.">
+  
+  <!-- استدعاء خط Cairo العصري -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- ملف التنسيقات العام المستقل -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 12px;
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--primary);
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+    @media (max-width: 992px) {
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 576px) {
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="home.html" class="brand-logo">
+        <img src="images/Ecg_logo.jpeg" alt="شعار المجموعة الاستشارية المصرية">
+        <div class="brand-text">
+          <span class="brand-title">المجموعة الاستشارية المصرية</span>
+          <span class="brand-subtitle">للمحاسبة والمراجعة والضرائب</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link active">خدماتنا</a></li>
+        <li><a href="blog.html" class="nav-link">المدونة</a></li>
+        <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="en/services.html" class="lang-switch-btn">English</a>
+        <button class="theme-toggle-btn" aria-label="تبديل المظهر" title="تغيير المظهر">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي لصفحة الخدمات -->
+  <main style="padding-top: 40px; padding-bottom: 50px;">
+    <div class="container">
+      
+      <!-- ترويسة القسم -->
+      <div style="text-align: center; margin-bottom: 40px;">
+        <div class="certified-badge-box">
+          <span class="certified-badge-text">خدماتنا</span>
+        </div>
+        <h1 style="font-size: 2rem; font-weight: 900; color: var(--text-main); margin-bottom: 12px;">خدماتنا الاستشارية المتكاملة</h1>
+        <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 650px; margin: 0 auto;">
+          باقة متكاملة من الخدمات المحاسبية والمالية والقانونية المصممة لخدمة الأفراد والشركات والمؤسسات.
+        </p>
+      </div>
+
+      <!-- شبكة الـ 9 خدمات -->
+      <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr); gap: 25px;">
+        
+        <!-- الخدمة 1: المحاسبة -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/Accounting_and_Bookkeeping_Ledger_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">الخدمات المحاسبية وإمساك الدفاتر</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">إمساك الدفاتر المحاسبية وإعداد القوائم الدورية بدقة واحترافية عالية لضمان الرقابة المالية السليمة لمنشأتك.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>إمساك الدفاتر المنتظمة</li>
+              <li>إعداد القوائم والتقارير المالية</li>
+              <li>تنظيم الدورات المستندية</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 2: الضرائب -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/Tax_Consulting_and_Returns_Document_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">الاستشارات والإقرارات الضريبية</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">إعداد وتقديم الإقرارات الضريبية الشهرية والسنوية وتمثيل الشركات أمام مصلحة الضرائب وفحص التسويات.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>تقديم الإقرارات الضريبية بدقة</li>
+              <li>فحص التسويات الضريبية</li>
+              <li>التمثيل أمام مصلحة الضرائب</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 3: المراجعة والتدقيق -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/Audit_and_Financial_Review_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">المراجعة والتدقيق المالي</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">فحص القوائم المالية واختبار نظم الرقابة الداخلية بدقة واحترافية عالية لضمان سلامة المركز المالي.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>مراجعة وتدقيق الحسابات</li>
+              <li>إصدار تقارير مراقب الحسابات</li>
+              <li>مراجعة نظم الرقابة الداخلية</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 4: تأسيس الشركات -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/Company_Formation_and_Legal_Structuring_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">تأسيس الشركات والهيكلة القانونية</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">إنشاء كافة أنواع الشركات واستخراج السجلات التجارية والبطاقات الضريبية وصياغة عقود التأسيس.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>صياغة عقود التأسيس</li>
+              <li>استخراج السجل والبطاقة الضريبية</li>
+              <li>تعديل الهيكل القانوني للشركات</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 5: دراسات الجدوى -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/Feasibility_Studies_Growth_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">دراسات الجدوى المعتمدة</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">إعداد دراسات جدوى مالية وتسويقية متكاملة لمشروعك الاستثماري الجديد لضمان نجاحه الاستثماري.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>دراسات السوق والمنافسين</li>
+              <li>تحليل التدفقات النقدية والمخاطر</li>
+              <li>تقييم المشروعات ودراسة التكلفة</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 6: الاستشارات المالية والإدارية -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/Financial_and_Management_Consulting_Knight_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">الاستشارات المالية والإدارية</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">مساندة الإدارة العليا في اتخاذ القرارات السليمة وتطوير الهياكل التنظيمية وإدارة السيولة النقدية بكفاءة.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>إعداد الموازنات التخطيطية والرقابية</li>
+              <li>وضع الهياكل الإدارية وتطوير العمليات</li>
+              <li>تقييم الأداء المالي والتشغيلي</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 7: تطبيق أنظمة ERP -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="/images/ODOO.PNG" alt="تطبيق أنظمة ERP" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">تطبيق أنظمة ERP (مثل Odoo)</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">ميكنة الدورة المستندية والمحاسبية بالكامل وربط الحسابات بالمخازن والمبيعات عبر أنظمة ERP المتطورة.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>تحليل متطلبات النظام المحاسبي</li>
+              <li>ربط الحسابات والمخازن</li>
+              <li>التدريب والدعم الفني المستمر</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 8: تقييم الشركات وإعادة الهيكلة -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/image_4.png" alt="تقييم الشركات وإعادة الهيكلة" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">تقييم الشركات وإعادة الهيكلة المالية</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">تقدير القيمة العادلة للمنشآت التجارية وإعادة هيكلة الديون والالتزامات لزيادة كفاءة رأس المال.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>حساب القيمة العادلة للأسهم والشركات</li>
+              <li>إعادة هندسة العمليات المالية</li>
+              <li>خطط خفض التكاليف وتعظيم الأرباح</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- الخدمة 9: الفاتورة والإيصال الإلكتروني -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="images/EBILL.PNG" alt="الفاتورة والإيصال الإلكتروني" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">الفاتورة والإيصال الإلكتروني</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">الربط الكامل بمنظومة الضرائب المصرية الإلكترونية وتقديم الدعم الفني الكامل لإصدار الفواتير.</p>
+            <ul style="padding-right: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>استخراج الختم الإلكتروني والتسجيل</li>
+              <li>ربط الأنظمة بالفاتورة الإلكترونية</li>
+              <li>حل كافة مشاكل البوابة الضريبية</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">احجز استشارة مجانية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- تذييل الصفحة الشامل (الموحد) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- العمود الأول: اللوجو والنبذة التعريفية -->
+        <div style="text-align: right;">
+          <div style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; margin-bottom: 12px;">
+            <div style="display: flex; flex-direction: column; text-align: right;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">المجموعة الاستشارية المصرية</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">للمحاسبة والمراجعة والضرائب</span>
+            </div>
+            <img src="images/Ecg_logo.jpeg" alt="شعار ECG" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; text-align: right;">
+            المجموعة الاستشارية المصرية (ECG) بيت خبرة متخصص يقدم استشارات مالية وضريبية ومراجعة قانونية متكاملة لرواد الأعمال والشركات.
+          </p>
+        </div>
+
+        <!-- العمود الثاني: روابط سريعة -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">روابط سريعة</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="home.html" class="footer-link">الرئيسية</a></li>
+            <li><a href="about.html" class="footer-link">من نحن</a></li>
+            <li><a href="services.html" class="footer-link">خدماتنا</a></li>
+            <li><a href="blog.html" class="footer-link">المدونة</a></li>
+            <li><a href="contact.html" class="footer-link">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الثالث: خدماتنا الرئيسية -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">خدماتنا الرئيسية</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">الضرائب</a></li>
+            <li><a href="services.html#audit" class="footer-link">المراجعة والتدقيق المالي</a></li>
+            <li><a href="services.html#setup" class="footer-link">تأسيس الشركات والهيكلة</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">دراسات الجدوى الاقتصادية</a></li>
+            <li><a href="services.html#consulting" class="footer-link">استشارات مالية وإدارية</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الرابع: تواصل معنا -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">تواصل معنا</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 10px;">
+              <span style="color: #ef4444; font-size: 1rem; margin-top: 2px; flex-shrink: 0;">📍</span>
+              <span style="line-height: 1.6; text-align: right;">مدينة فيوتشر سيتى - عمارة 2 الدور 1 - شارع الشهيد جلال الدسوقى - وابور المياه - باب شرقى - الاسكندرية - جمهورية مصر العربية</span>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">034228459</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">01222552314</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <span style="font-size: 1rem; flex-shrink: 0;">✉️</span>
+              <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 15px; margin-top: 5px;">
+              <a href="https://www.facebook.com/ECG.Khaled.Gaber" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-facebook.png" alt="Facebook" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-linkedin.png" alt="LinkedIn" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- حقوق النشر -->
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>المجموعة الاستشارية المصرية (ECG) &copy; 2026 | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- جافاسكريبت التحكم بالثيم -->
+  <script src="js/main.js"></script>
+</body>
+</html>

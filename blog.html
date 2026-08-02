@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المدونة - المجموعة الاستشارية المصرية (ECG)</title>
+  <meta name="description" content="تابع أحدث التوجيهات والمعايير المحاسبية والضريبية والتشريعية في السوق المصري عبر مدونة المجموعة الاستشارية المصرية.">
+  
+  <!-- استدعاء خط Cairo العصري -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- ملف التنسيقات العام المستقل -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 12px;
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--primary);
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 992px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 576px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .blog-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="home.html" class="brand-logo">
+        <img src="images/Ecg_logo.jpeg" alt="شعار المجموعة الاستشارية المصرية">
+        <div class="brand-text">
+          <span class="brand-title">المجموعة الاستشارية المصرية</span>
+          <span class="brand-subtitle">للمحاسبة والمراجعة والضرائب</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="blog.html" class="nav-link active">المدونة</a></li>
+        <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="en/blog.html" class="lang-switch-btn">English</a>
+        <button class="theme-toggle-btn" aria-label="تبديل المظهر" title="تغيير المظهر">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي للمدونة -->
+  <main style="padding: 50px 0;">
+    <div class="container">
+      
+      <!-- ترويسة المدونة -->
+      <div style="text-align: center; margin-bottom: 45px;">
+        <div class="certified-badge-box">
+          <span class="certified-badge-text">المدونة والتحديثات</span>
+        </div>
+        <h1 style="font-size: 2rem; font-weight: 900; color: var(--text-main); margin-bottom: 12px;">أحدث التوجيهات والمعايير المحاسبية والضريبية</h1>
+        <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 680px; margin: 0 auto;">
+          تابع معنا أحدث التعديلات التشريعية والضريبية في السوق المصري لتبقى شركتك دائماً في دائرة الامتثال والأمان.
+        </p>
+      </div>
+
+      <!-- شبكة الـ 9 مقالات/كروت -->
+      <div class="blog-grid">
+        
+        <!-- الكارت 1 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">التفويض الرقمي</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">دليل الشركات نحو الالتزام بمنظومة الفاتورة الإلكترونية</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              أهم الخطوات والمتطلبات القانونية لتفادي الغرامات وضمان التكامل السليم مع مصلحة الضرائب المصرية.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 2 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">تحديثات تشريعية</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">التعديلات الضريبية الجديدة وأثرها على القوائم المالية</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              كيف تتعامل إدارتك المالية بمرونة مع التحديثات الأخيرة لقوانين الضرائب ومعايير المحاسبة المصرية.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 3 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">رقابة مالية</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">أهمية تدقيق المخزون وحسابات التكاليف للشركات الصناعية</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              استراتيجيات فعالة لإحكام الرقابة الداخلية وحماية الأرباح التشغيلية للمنشأة بكفاءة عالية.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 4 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">الحوكمة المالية</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">دور المراجعة الداخلية في اكتشاف ومنع المخاطر المالية</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              كيف تحمي أنظمة الرقابة الداخلية الحصينة مؤسستك من الهدر المالي وتحسن كفاءة الأداء التشغيلي.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 5 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">تأسيس الشركات</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">دليلك لاختيار الشكل القانوني الأنسب لشركتك الناشئة</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              مقارنة شاملة بين أنواع الشركات في القانون المصري والآثار الضريبية والمالية المترتبة على كل اختيار.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 6 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">التحول الرقمي</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">كيف تساهم أنظمة ERP في اتخاذ القرارات الإدارية السريعة</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              أهمية ربط الحسابات والمخازن وإدارة المبيعات عبر منصات متطورة مثل Odoo لتعظيم نمو المؤسسة.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 7 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">دراسات الجدوى</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">لماذا تفشل بعض المشروعات الاستثمارية رغم قوة الفكرة؟</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              قراءة تحليلية لأهمية دراسات الجدوى المالية ودراسة السوق وتدفقات رأس المال العامل لتجنب المخاطر.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 8 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">إدارة الأزمات</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">خطط خفض التكاليف وإعادة الهيكلة المالية في الأوقات الصعبة</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              كيف تعيد هندسة العمليات المالية لشركتك وتدير السيولة النقدية بكفاءة عالية لتخطي التحديات الاقتصادية.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+        <!-- الكارت 9 -->
+        <div class="blog-card">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: rgba(30,58,138,0.08); padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 12px;">الالتزام الضريبي</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; line-height: 1.5;">دليلك الشامل لتجنب الغرامات خلال موسم الإقرارات الضريبية</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+              أهم النصائح المهنية لتقديم إقراراتك في المواعيد المحددة والتسوية السليمة مع مصلحة الضرائب.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px;">اقرأ المزيد </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- تذييل الصفحة الشامل (الموحد) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- العمود الأول: اللوجو والنبذة التعريفية -->
+        <div style="text-align: right;">
+          <div style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; margin-bottom: 12px;">
+            <div style="display: flex; flex-direction: column; text-align: right;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">المجموعة الاستشارية المصرية</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">للمحاسبة والمراجعة والضرائب</span>
+            </div>
+            <img src="images/Ecg_logo.jpeg" alt="شعار ECG" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; text-align: right;">
+            المجموعة الاستشارية المصرية (ECG) بيت خبرة متخصص يقدم استشارات مالية وضريبية ومراجعة قانونية متكاملة لرواد الأعمال والشركات.
+          </p>
+        </div>
+
+        <!-- العمود الثاني: روابط سريعة -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">روابط سريعة</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="home.html" class="footer-link">الرئيسية</a></li>
+            <li><a href="about.html" class="footer-link">من نحن</a></li>
+            <li><a href="services.html" class="footer-link">خدماتنا</a></li>
+            <li><a href="blog.html" class="footer-link">المدونة</a></li>
+            <li><a href="contact.html" class="footer-link">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الثالث: خدماتنا الرئيسية -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">خدماتنا الرئيسية</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">الضرائب</a></li>
+            <li><a href="services.html#audit" class="footer-link">المراجعة والتدقيق المالي</a></li>
+            <li><a href="services.html#setup" class="footer-link">تأسيس الشركات والهيكلة</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">دراسات الجدوى الاقتصادية</a></li>
+            <li><a href="services.html#consulting" class="footer-link">استشارات مالية وإدارية</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الرابع: تواصل معنا -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">تواصل معنا</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 10px;">
+              <span style="color: #ef4444; font-size: 1rem; margin-top: 2px; flex-shrink: 0;">📍</span>
+              <span style="line-height: 1.6; text-align: right;">مدينة فيوتشر سيتى - عمارة 2 الدور 1 - شارع الشهيد جلال الدسوقى - وابور المياه - باب شرقى - الاسكندرية - جمهورية مصر العربية</span>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">034228459</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">01222552314</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <span style="font-size: 1rem; flex-shrink: 0;">✉️</span>
+              <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 15px; margin-top: 5px;">
+              <a href="https://www.facebook.com/ECG.Khaled.Gaber" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-facebook.png" alt="Facebook" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-linkedin.png" alt="LinkedIn" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- حقوق النشر -->
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>المجموعة الاستشارية المصرية (ECG) &copy; 2026 | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- جافاسكريبت التحكم بالثيم -->
+  <script src="js/main.js"></script>
+</body>
+</html>

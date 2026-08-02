@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Egyptian Consulting Group (ECG)</title>
+  <meta name="description" content="Learn about the Egyptian Consulting Group (ECG), our vision, mission, and the professional leadership of Mr. Khaled Gaber Mahmoud in Alexandria, Egypt.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(30, 58, 138, 0.05);
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+    .ceo-section {
+      padding: 50px 0;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .ceo-grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    @media (max-width: 992px) {
+      .ceo-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    .ceo-img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--border-color);
+    }
+    .association-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--bg-color);
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+    }
+    .association-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: var(--card-bg);
+      padding: 2px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="../images/Ecg_logo.jpeg" alt="ECG Logo">
+        <div class="brand-text">
+          <span class="brand-title">Egyptian Consulting Group</span>
+          <span class="brand-subtitle">Accounting, Audit & Tax</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="../about.html" class="lang-switch-btn">العربية</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Change Theme">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Overview Section -->
+    <section style="padding: 50px 0;">
+      <div class="container" style="text-align: center;">
+        <div class="certified-badge-box">
+          <span class="certified-badge-text">About Us</span>
+        </div>
+        <h1 style="font-size: 2rem; font-weight: 900; margin-bottom: 20px; color: var(--text-main);">About Egyptian Consulting Group</h1>
+        <p style="font-size: 1rem; color: var(--text-muted); max-width: 850px; margin: 0 auto 40px auto; line-height: 1.9;">
+          Egyptian Consulting Group (ECG) is a specialized professional expert house offering integrated solutions for companies and investors, including external audit, tax consulting, financial statement preparation, feasibility studies, financial restructuring, company valuation and setup, and ERP system implementation such as Odoo.
+        </p>
+
+        <!-- Vision & Mission -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
+          <div class="card" style="text-align: left;">
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 10px;">🎯 Our Vision</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.7;">To be the leading expert house in providing precise and professional financial and tax consulting that supports the growth and stability of the business sector in Egypt.</p>
+          </div>
+          <div class="card" style="text-align: left;">
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 10px;">💡 Our Mission</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.7;">We believe that financial success starts with governance and transparency; thus, we are committed to delivering services built on the highest quality standards to build long-term partnerships with our clients.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Leadership (CEO) -->
+    <section class="ceo-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 35px;">
+          <h2 style="font-size: 1.6rem; font-weight: 900; color: var(--text-main);">Executive & Professional Leadership</h2>
+        </div>
+
+        <div class="ceo-grid card" style="padding: 35px;">
+          <!-- CEO Image -->
+         <div>
+  <img src="../images/CEO.jpeg" alt="Mr. Khaled Gaber Mahmoud" class="ceo-img">
+</div>
+
+          <!-- CEO Bio & Memberships -->
+          <div style="text-align: left;">
+            <h3 style="font-size: 1.6rem; font-weight: 900; color: var(--primary); margin-bottom: 5px;">Mr. Khaled Gaber Mahmoud</h3>
+            <p style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 15px;">Certified Accountant & Auditor | Founder & Managing Director (ECG)</p>
+            
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
+              He has over 25 years of professional experience in accounting, auditing, financial, and tax consulting within the Arab Republic of Egypt. He possesses extensive practical experience in applying Egyptian Accounting Standards and International Financial Reporting Standards (IFRS), along with deep familiarity with Egyptian tax legislation, enabling him to provide professional solutions that enhance compliance, improve financial performance, and empower decision-making.
+            </p>
+
+            <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">Professional Memberships & Accreditations:</h4>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+  
+  <div class="association-item">
+    <img src="../images/afaa.png" alt="Association Logo" class="association-logo">
+    <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Member of the Arab Union of Accountants and Auditors</span>
+  </div>
+
+  <div class="association-item">
+    <img src="../images/EST.PNG" alt="Association Logo" class="association-logo">
+    <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Member of the Egyptian Tax Association</span>
+  </div>
+
+  <div class="association-item">
+    <img src="../images/ESAA.PNG" alt="Association Logo" class="association-logo">
+    <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Member of the Egyptian Association of Accountants and Auditors</span>
+  </div>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="text-align: left;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="../images/Ecg_logo.jpeg" alt="ECG Logo" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">Egyptian Consulting Group</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">Accounting, Audit & Tax</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+            Egyptian Consulting Group (ECG) is a specialized expert house offering integrated financial, tax, and legal auditing services for entrepreneurs and corporations.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Core Services</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">Tax Consulting</a></li>
+            <li><a href="services.html#audit" class="footer-link">Financial Audit</a></li>
+            <li><a href="services.html#setup" class="footer-link">Company Setup</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">Feasibility Studies</a></li>
+            <li><a href="services.html#consulting" class="footer-link">Financial Advisory</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Contact Us</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <span style="color: #ef4444; font-size: 1rem; margin-top: 2px; flex-shrink: 0;">📍</span>
+              <span style="line-height: 1.6;">Future City - Building 2, Floor 1 - El Shaheed Galal El Desouky St., Wabour El المياه, Bab Sharq, Alexandria, Egypt</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <img src="../images/icon-whatsapp.png" alt="Phone" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">034228459</a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <img src="../images/icon-whatsapp.png" alt="WhatsApp" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">01222552314</a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1rem; flex-shrink: 0;">✉️</span>
+              <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 15px; margin-top: 5px;">
+              <a href="https://www.facebook.com/ECG.Khaled.Gaber" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="../images/icon-facebook.png" alt="Facebook" style="width: 18px; height: 18px; object-fit: contain;"> Facebook
+              </a>
+              <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="../images/icon-linkedin.png" alt="LinkedIn" style="width: 18px; height: 18px; object-fit: contain;"> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>Egyptian Consulting Group (ECG) &copy; 2026 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

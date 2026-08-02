@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن - المجموعة الاستشارية المصرية (ECG)</title>
+  <meta name="description" content="تعرف على المجموعة الاستشارية المصرية (ECG)، رؤيتنا، رسالتنا، وخبرة قيادتنا المهنية للأستاذ خالد جابر محمود بالإسكندرية ومصر.">
+  
+  <!-- استدعاء خط Cairo العصري -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- ملف التنسيقات العام المستقل -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- تنسيقات مخصصة لصفحة من نحن وقسم الـ CEO -->
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(30, 58, 138, 0.05);
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+    /* تنسيق بطاقة الـ CEO */
+    .ceo-section {
+      padding: 50px 0;
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .ceo-grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    @media (max-width: 992px) {
+      .ceo-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    .ceo-img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--border-color);
+    }
+    .association-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--bg-color);
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+    }
+    .association-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: var(--card-bg);
+      padding: 2px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="home.html" class="brand-logo">
+        <img src="images/Ecg_logo.jpeg" alt="شعار المجموعة الاستشارية المصرية">
+        <div class="brand-text">
+          <span class="brand-title">المجموعة الاستشارية المصرية</span>
+          <span class="brand-subtitle">للمحاسبة والمراجعة والضرائب</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link active">من نحن</a></li>
+        <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="blog.html" class="nav-link">المدونة</a></li>
+        <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="en/about.html" class="lang-switch-btn">English</a>
+        <button class="theme-toggle-btn" aria-label="تبديل المظهر" title="تغيير المظهر">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي لصفحة من نحن -->
+  <main>
+    
+    <!-- قسم نبذة عنا -->
+    <section style="padding: 50px 0;">
+      <div class="container" style="text-align: center;">
+        <div class="certified-badge-box">
+          <span class="certified-badge-text">من نحن</span>
+        </div>
+        <h1 style="font-size: 2rem; font-weight: 900; margin-bottom: 20px; color: var(--text-main);">نبذة عن المجموعة الاستشارية المصرية</h1>
+        <p style="font-size: 1rem; color: var(--text-muted); max-width: 850px; margin: 0 auto 40px auto; line-height: 1.9;">
+          المجموعة الاستشارية المصرية (ECG) بيت خبرة مهني متخصص يقدم حلولاً متكاملة للشركات والمستثمرين، تشمل المراجعة الخارجية، الاستشارات الضريبية، إعداد القوائم المالية، دراسات الجدوى، الهيكلة المالية، وتقييم الشركات وتأسيسها، وتطبيق أنظمة تخطيط موارد المؤسسات (ERP) مثل Odoo.
+        </p>
+
+        <!-- الرؤية والرسالة -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
+          <div class="card" style="text-align: right;">
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 10px;">🎯 رؤيتنا</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.7;">أن نكون بيت الخبرة الرائد في تقديم الاستشارات المالية والضريبية بدقة واحترافية عالية تدعم نمو واستقرار قطاع الأعمال في مصر.</p>
+          </div>
+          <div class="card" style="text-align: right;">
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 10px;">💡 رسالتنا</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.7;">نؤمن بأن النجاح المالي يبدأ من الحوكمة والشفافية؛ لذا نلتزم بتقديم خدمات مبنية على أعلى معايير الجودة لبناء شراكات طويلة الأمد مع عملائنا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم القيادة التنفيذية (الـ CEO) -->
+    <section class="ceo-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 35px;">
+          <h2 style="font-size: 1.6rem; font-weight: 900; color: var(--text-main);">القيادة التنفيذية والمهنية</h2>
+        </div>
+
+        <div class="ceo-grid card" style="padding: 35px;">
+          <!-- صورة الـ CEO -->
+          <div>
+            <img src="images/CEO.jpeg" alt="الأستاذ خالد جابر محمود" class="ceo-img">
+          </div>
+
+          <!-- تفاصيل وسيرة الـ CEO والعضويات -->
+          <div style="text-align: right;">
+            <h3 style="font-size: 1.6rem; font-weight: 900; color: var(--primary); margin-bottom: 5px;">الأستاذ/ خالد جابر محمود</h3>
+            <p style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 15px;">محاسب قانوني ومراقب حسابات شركات مساهمة | مؤسس ومدير (ECG)</p>
+            
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
+              يتمتع بخبرة مهنية تتجاوز 25 عامًا في مجالات المحاسبة والمراجعة والاستشارات المالية والضريبية داخل جمهورية مصر العربية. يمتلك خبرة عملية واسعة في تطبيق معايير المحاسبة المصرية والمعايير الدولية للتقارير المالية (IFRS)، إلى جانب الإلمام العميق بالتشريعات الضريبية المصرية، مما يمكنه من تقديم حلول مهنية تدعم الامتثال وتحسن الأداء المالي وتعزز اتخاذ القرار.
+            </p>
+
+            <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">العضويات والاعتمادات المهنية:</h4>
+            
+            <!-- قائمة العضويات الـ 3 مع أماكن شعارات الجمعيات -->
+           <div style="display: flex; flex-direction: column; gap: 10px;">
+  
+  <div class="association-item">
+    <img src="images/afaa.png" alt="شعار الاتحاد العام للمحاسبين" class="association-logo">
+    <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">عضو الاتحاد العام للمحاسبين والمراجعين العرب</span>
+  </div>
+
+  <div class="association-item">
+    <img src="images/EST.PNG" alt="شعار جمعية الضرائب" class="association-logo">
+    <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">عضو جمعية الضرائب المصرية</span>
+  </div>
+
+  <div class="association-item">
+    <img src="images/ESAA.PNG" alt="شعار جمعية المحاسبين القانونيين" class="association-logo">
+    <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">عضو الجمعية المصرية للمحاسبين والمراجعين القانونيين</span>
+  </div>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- تذييل الصفحة الشامل (الموحد) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- العمود الأول: اللوجو والنبذة التعريفية -->
+        <div style="text-align: right;">
+          <div style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; margin-bottom: 12px;">
+            <div style="display: flex; flex-direction: column; text-align: right;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">المجموعة الاستشارية المصرية</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">للمحاسبة والمراجعة والضرائب</span>
+            </div>
+            <img src="images/Ecg_logo.jpeg" alt="شعار ECG" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; text-align: right;">
+            المجموعة الاستشارية المصرية (ECG) بيت خبرة متخصص يقدم استشارات مالية وضريبية ومراجعة قانونية متكاملة لرواد الأعمال والشركات.
+          </p>
+        </div>
+
+        <!-- العمود الثاني: روابط سريعة -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">روابط سريعة</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="home.html" class="footer-link">الرئيسية</a></li>
+            <li><a href="about.html" class="footer-link">من نحن</a></li>
+            <li><a href="services.html" class="footer-link">خدماتنا</a></li>
+            <li><a href="blog.html" class="footer-link">المدونة</a></li>
+            <li><a href="contact.html" class="footer-link">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الثالث: خدماتنا الرئيسية -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">خدماتنا الرئيسية</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">الضرائب</a></li>
+            <li><a href="services.html#audit" class="footer-link">المراجعة والتدقيق المالي</a></li>
+            <li><a href="services.html#setup" class="footer-link">تأسيس الشركات والهيكلة</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">دراسات الجدوى الاقتصادية</a></li>
+            <li><a href="services.html#consulting" class="footer-link">استشارات مالية وإدارية</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الرابع: تواصل معنا -->
+        <div style="text-align: right;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">تواصل معنا</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 10px;">
+              <span style="color: #ef4444; font-size: 1rem; margin-top: 2px; flex-shrink: 0;">📍</span>
+              <span style="line-height: 1.6; text-align: right;">مدينة فيوتشر سيتى - عمارة 2 الدور 1 - شارع الشهيد جلال الدسوقى - وابور المياه - باب شرقى - الاسكندرية - جمهورية مصر العربية</span>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">034228459</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <img src="images/icon-whatsapp.png" alt="واتساب" style="width: 18px; height: 18px; object-fit: contain; flex-shrink: 0;">
+              <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;" dir="ltr">01222552314</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+              <span style="font-size: 1rem; flex-shrink: 0;">✉️</span>
+              <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a>
+            </li>
+            <li style="display: flex; align-items: center; justify-content: flex-start; gap: 15px; margin-top: 5px;">
+              <a href="https://www.facebook.com/ECG.Khaled.Gaber" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-facebook.png" alt="Facebook" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.linkedin.com/company/egyptianconsultinggroup" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted);">
+                <img src="images/icon-linkedin.png" alt="LinkedIn" style="width: 18px; height: 18px; object-fit: contain;">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- حقوق النشر -->
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>المجموعة الاستشارية المصرية (ECG) &copy; 2026 | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- جافاسكريبت التحكم بالثيم -->
+  <script src="js/main.js"></script>
+</body>
+</html>

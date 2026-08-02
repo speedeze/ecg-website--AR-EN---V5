@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Egyptian Consulting Group (ECG)</title>
+  <meta name="description" content="Explore our integrated consulting services in accounting, auditing, taxation, and company setup in Alexandria and Egypt.">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .certified-badge-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(2, 132, 199, 0.12) 100%);
+      border: 1px solid rgba(30, 58, 138, 0.2);
+      border-radius: 30px;
+      margin-bottom: 12px;
+    }
+    .certified-badge-text {
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--primary);
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+    @media (max-width: 992px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 576px) {
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="home.html" class="brand-logo">
+        <img src="../images/Ecg_logo.jpeg" alt="ECG Logo">
+        <div class="brand-text">
+          <span class="brand-title">Egyptian Consulting Group</span>
+          <span class="brand-subtitle">Accounting, Audit & Tax</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../services.html" class="lang-switch-btn">العربية</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Change Theme">
+          <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 40px; padding-bottom: 50px;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <div class="certified-badge-box">
+          <span class="certified-badge-text">Our Services</span>
+        </div>
+        <h1 style="font-size: 2rem; font-weight: 900; color: var(--text-main); margin-bottom: 12px;">Integrated Consulting Services</h1>
+        <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 650px; margin: 0 auto;">
+          A comprehensive suite of accounting, financial, and legal services designed to serve individuals, companies, and corporations.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Service 1 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/Accounting_and_Bookkeeping_Ledger_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Accounting & Bookkeeping</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Regular bookkeeping and preparing periodic statements with high professionalism to ensure sound financial control.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Regular Bookkeeping</li>
+              <li>Financial Statements & Reports</li>
+              <li>Documentary Flow Organization</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/Tax_Consulting_and_Returns_Document_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Tax Consulting & Returns</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Preparing and filing monthly and annual tax returns, representing companies before the tax authority.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Accurate Tax Return Filing</li>
+              <li>Tax Settlement Audits</li>
+              <li>Tax Authority Representation</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/Audit_and_Financial_Review_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Financial Audit & Review</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Examining financial statements and testing internal control systems to ensure financial health.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Account Auditing & Review</li>
+              <li>Auditor Report Issuance</li>
+              <li>Internal Control Reviews</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/Company_Formation_and_Legal_Structuring_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Company Setup & Legal Structuring</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Establishing all types of companies, obtaining commercial registers, tax cards, and drafting contracts.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Drafting Articles of Incorporation</li>
+              <li>Commercial Register & Tax Card</li>
+              <li>Legal Structure Modification</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/Feasibility_Studies_Growth_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Certified Feasibility Studies</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Preparing comprehensive financial and marketing feasibility studies for new investment projects.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Market & Competitor Studies</li>
+              <li>Cash Flow & Risk Analysis</li>
+              <li>Project Evaluation & Costing</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/Financial_and_Management_Consulting_Knight_Icon.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Financial & Management Advisory</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Assisting senior management in sound decision-making, organizational development, and cash flow.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Budgeting & Control Frameworks</li>
+              <li>Organizational Structure Setup</li>
+              <li>Financial & Operational Performance</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/ODOO.PNG" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">ERP Systems (e.g., Odoo)</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Full automation of accounting workflows and linking accounts with inventory and sales via advanced ERP.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Accounting Requirements Analysis</li>
+              <li>Inventory & Accounts Integration</li>
+              <li>Continuous Training & Tech Support</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/image_4.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Company Valuation & Restructuring</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Estimating fair value of commercial entities and restructuring debt and liabilities to increase capital efficiency.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>Fair Value Calculation for Shares</li>
+              <li>Financial Processes Re-engineering</li>
+              <li>Cost Reduction & Profit Maximization</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left;">
+          <div>
+            <div style="margin-bottom: 15px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              <img src="../images/EBILL.PNG" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 10px;">Electronic Invoice & Receipt</h3>
+            <p class="card-description" style="font-size: 0.85rem; line-height: 1.6;">Full integration with the Egyptian e-tax portal and providing complete technical support for invoicing.</p>
+            <ul style="padding-left: 15px; font-size: 0.8rem; color: var(--text-muted); margin: 15px 0; line-height: 1.8;">
+              <li>E-Seal Acquisition & Registration</li>
+              <li>System Integration with E-Invoicing</li>
+              <li>Resolving Tax Portal Issues</li>
+            </ul>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 8px;">Book Free Consultation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="text-align: left;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="../images/Ecg_logo.jpeg" alt="ECG Logo" style="height: 45px; width: auto; border-radius: 6px; object-fit: contain;">
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-weight: 800; font-size: 0.85rem; color: var(--text-main);">Egyptian Consulting Group</span>
+              <span style="font-weight: 700; font-size: 0.65rem; color: var(--text-muted);">Accounting, Audit & Tax</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;">
+            Egyptian Consulting Group (ECG) is a specialized expert house offering integrated financial, tax, and legal auditing services for entrepreneurs and corporations.
+          </p>
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="home.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Core Services</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="services.html#tax" class="footer-link">Tax Consulting</a></li>
+            <li><a href="services.html#audit" class="footer-link">Financial Audit</a></li>
+            <li><a href="services.html#setup" class="footer-link">Company Setup</a></li>
+            <li><a href="services.html#feasibility" class="footer-link">Feasibility Studies</a></li>
+            <li><a href="services.html#consulting" class="footer-link">Financial Advisory</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800;">Contact Us</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+            <li>📍 Future City - Building 2, Floor 1 - El Shaheed Galal El Desouky St., Alexandria, Egypt</li>
+            <li dir="ltr">📞 <a href="tel:034228459" style="color: var(--text-muted); text-decoration: none;">034228459</a></li>
+            <li dir="ltr">💬 <a href="https://wa.me/201222552314" style="color: var(--text-muted); text-decoration: none;">01222552314</a></li>
+            <li dir="ltr">✉️ <a href="mailto:info@ecgoffice.com" style="color: var(--text-muted); text-decoration: none;">info@ecgoffice.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-muted);">
+        <p>Egyptian Consulting Group (ECG) &copy; 2026 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
